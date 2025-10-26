@@ -1,15 +1,15 @@
-# TMG-DevCore Framework
+TMG-DevCore Bundle
+Includes:
+- tmg-devcore (core framework)
+- tmg-multichar (multi-character)
+- tmg-spawn (spawning)
 
-A modular FiveM framework built by **TMG-Development**.
-
-## Features
-- Core player management system (with unique ID)
-- Job system with ranks
-- Vehicle spawning system
-- Item and inventory base logic
-- MySQL integration via OXMySQL
-- TXAdmin recipe deployment ready
-
-## Default Server Info
-**Name:** TMG-DevCore  
-**Description:** A server built on TMG-DevCore framework made by TMG-Development
+Install:
+1. Place folders in your server resources directory.
+2. Ensure oxmysql is installed and server.cfg has correct mysql_connection_string.
+3. Ensure resources in server.cfg in the following order:
+   ensure oxmysql
+   ensure tmg-devcore
+   ensure tmg-multichar
+   ensure tmg-spawn
+4. Import SQL from sql/devcore_full.sql into your MySQL database.

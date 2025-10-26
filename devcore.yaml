@@ -54,11 +54,6 @@ tasks:
     src: https://github.com/qbcore-framework/bob74_ipl
 
   - action: download_github
-    dest: ./resources/[standalone]/safecracker
-    ref: main
-    src: https://github.com/qbcore-framework/safecracker
-
-  - action: download_github
     dest: ./resources/[standalone]/screenshot-basic
     ref: master
     src: https://github.com/citizenfx/screenshot-basic
@@ -115,9 +110,9 @@ tasks:
 
   # Downloading DevCore resources
   - action: download_github
-    dest: ./resources/[DevCore]/devcore
+    dest: ./resources/[Devcore]/devcore
     ref: main
-    src: https://github.com/TMG-Development/DevCore
+    src: https://github.com/TMG-Development/TMG-Devcore
 
   - action: waste_time # prevent github throttling
     seconds: 10
