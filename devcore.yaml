@@ -13,11 +13,11 @@ tasks:
     dest: ./devcore
 
   - action: move_path
-    src: https://github.com/TMG-Development/txAdminRecipe/blob/main/server.cfg
+    src: https://github.com/TMG-Development/txAdminRecipe/main/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: https://github.com/TMG-Development/txAdminRecipe/blob/main/myLogo.png
+    src: https://github.com/TMG-Development/txAdminRecipe/main/myLogo.png
     dest: ./myLogo.png
 
   # Prepare Database
