@@ -8,22 +8,23 @@ description: A Next Gen Fivem Framwork Built By TMG-Development
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/TMG-Development/DevCore
+    src: https://github.com/TMG-Development/txAdminRecipe
     ref: main
-    dest: ./devcore
+    dest: ./tmp/devcore
 
   - action: move_path
-    src: https://github.com/TMG-Development/txAdminRecipe/main/server.cfg
+    src: ./tmp/devcore/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: https://github.com/TMG-Development/txAdminRecipe/main/myLogo.png
+    src: ./tmp/devcore/myLogo.png
     dest: ./myLogo.png
 
   # Prepare Database
   - action: connect_database
   - action: query_database
-    file: ./devcore.sql
+    file: ./tmp/devcore/devcore.sql
+
 
   # STANDALONE
   - action: download_github
